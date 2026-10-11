@@ -1,0 +1,18 @@
+QR PERSONEL TAKİP — PWA PAKETİ
+
+İçerik:
+- index.html: uygulama
+- manifest.webmanifest: ana ekrana ekleme bilgileri
+- sw.js: temel dosyalar için önbellek / çevrimdışı açılış desteği
+- icon-192.png, icon-512.png: uygulama simgeleri
+
+ÖNEMLİ:
+Bu paket henüz internette yayınlanmış değildir. iPhone'da gerçek uygulama gibi "Ana Ekrana Ekle" seçeneğinin çıkması ve kamera erişimi için HTTPS destekli bir web adresinde yayınlanmalıdır.
+HTML dosyasını Dosyalar uygulamasından açmak tek başına PWA kurulumu sağlamaz.
+QR üretme ve kamera okutma kütüphaneleri şu an CDN üzerinden yüklenir; ilk yüklemede internet gerekir. Yerel personel verileri cihaz/tarayıcı depolamasında tutulur, otomatik olarak başka cihazlarla paylaşılmaz.
+Yayınlama adımları:
+1. Bu ZIP içindeki tüm dosyaları aynı klasör yapısıyla bir HTTPS statik web barındırıcısına yükleyin.
+2. iPhone'da Safari ile https://.../index.html adresini açın.
+3. Paylaş > Ana Ekrana Ekle seçin.
+4. İlk kullanımda kamera iznini verin.
+Birden fazla telefondan ortak kayıt, kullanıcı hesapları ve sunucu yedeklemesi için ayrıca backend gerekir.
